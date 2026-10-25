@@ -16,7 +16,7 @@ You need Claude Code. Pick one:
 
   `--plugin-dir` also accepts the unzipped `release-notes/` folder.
 - **Load it in every session.** Unzip it and move the `release-notes/` folder (the one that contains `.claude-plugin/plugin.json`) into `~/.claude/skills/`. Claude Code loads it at startup unless your administrator blocks skills-directory plugins.
-- **Install by name (coming soon).** When the public Claudekit kits repository is live, you will be able to run `claude plugin marketplace add <repo>` and then `claude plugin install release-notes@claudekit-kits`. The recipe page will list the exact repository.
+- **Install by name.** In Claude Code run `/plugin marketplace add tranquangdong/claudekit-kits`, then `/plugin install release-notes@claudekit-kits`.
 
 ## Use
 
