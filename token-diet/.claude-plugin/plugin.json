@@ -1,0 +1,13 @@
+{
+  "name": "token-diet",
+  "displayName": "Token Diet",
+  "version": "0.1.0",
+  "description": "Read-only audit of what Claude Code loads at session start (CLAUDE.md, imports, always-on rules, skills, MCP servers) with documented ways to trim it. Run /token-diet:audit.",
+  "author": {
+    "name": "Claudekit.ai",
+    "url": "https://claudekit.ai"
+  },
+  "homepage": "https://claudekit.ai/recipes/token-diet/",
+  "license": "MIT",
+  "keywords": ["context", "claude-md", "usage", "tokens"]
+}

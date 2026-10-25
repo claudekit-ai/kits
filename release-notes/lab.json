@@ -1,0 +1,45 @@
+{
+  "kit": "release-notes",
+  "static": {
+    "script": "lab/test.sh",
+    "covers": "grouping by type and scope, breaking changes from ! and footer, default range from latest tag, bad refs"
+  },
+  "smoke": {
+    "fixture": "lab/fixture.sh",
+    "prompt": "/release-notes:draft v1.0.0 HEAD",
+    "model": "sonnet",
+    "maxTurns": 4,
+    "allowedTools": [
+      "Bash(bash *)",
+      "Bash(git *)",
+      "Read",
+      "Write"
+    ],
+    "expect": [
+      {
+        "kind": "file-exists",
+        "path": "RELEASE_NOTES.md"
+      },
+      {
+        "kind": "file-matches",
+        "path": "RELEASE_NOTES.md",
+        "pattern": "(?i)breaking"
+      },
+      {
+        "kind": "file-matches",
+        "path": "RELEASE_NOTES.md",
+        "pattern": "(?i)features"
+      },
+      {
+        "kind": "file-matches",
+        "path": "RELEASE_NOTES.md",
+        "pattern": "/health"
+      },
+      {
+        "kind": "file-matches",
+        "path": "RELEASE_NOTES.md",
+        "pattern": "Node 18"
+      }
+    ]
+  }
+}

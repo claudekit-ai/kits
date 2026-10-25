@@ -1,0 +1,34 @@
+{
+  "kit": "usage-meter",
+  "static": {
+    "script": "lab/test.sh",
+    "covers": "status line output for Pro/Max and API-key inputs, colour thresholds, settings.json install, dated backups never overwritten, symlinked settings.json, reinstall, --force, uninstall, invalid JSON"
+  },
+  "smoke": {
+    "fixture": "lab/fixture.sh",
+    "prompt": "/usage-meter:install ./cfg",
+    "model": "sonnet",
+    "maxTurns": 4,
+    "allowedTools": [
+      "Bash(bash *)",
+      "Bash(echo *)"
+    ],
+    "expect": [
+      {
+        "kind": "file-exists",
+        "path": "cfg/usage-meter-statusline.sh"
+      },
+      {
+        "kind": "file-matches",
+        "path": "cfg/settings.json",
+        "pattern": "usage-meter-statusline\\.sh"
+      },
+      {
+        "kind": "file-matches",
+        "path": "cfg/settings.json",
+        "pattern": "\"type\": \"command\""
+      }
+    ]
+  },
+  "notes": "Status lines render only in interactive sessions, so the smoke run checks the install flow; the rendered line is covered by the static test."
+}

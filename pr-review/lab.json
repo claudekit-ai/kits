@@ -1,0 +1,46 @@
+{
+  "kit": "pr-review",
+  "static": {
+    "script": "lab/test.sh",
+    "covers": "base detection, commits, diffstat, diff, size limit, uncommitted changes, bad base and outside-repo errors"
+  },
+  "smoke": {
+    "fixture": "lab/fixture.sh",
+    "prompt": "/pr-review:review main",
+    "model": "sonnet",
+    "maxTurns": 4,
+    "allowedTools": [
+      "Bash(bash *)",
+      "Bash(git *)",
+      "Read",
+      "Write",
+      "Glob",
+      "Grep"
+    ],
+    "expect": [
+      {
+        "kind": "file-exists",
+        "path": "REVIEW.md"
+      },
+      {
+        "kind": "file-matches",
+        "path": "REVIEW.md",
+        "pattern": "src/users\\.js"
+      },
+      {
+        "kind": "file-matches",
+        "path": "REVIEW.md",
+        "pattern": "(?i)injection"
+      },
+      {
+        "kind": "file-matches",
+        "path": "REVIEW.md",
+        "pattern": "(?i)verdict"
+      },
+      {
+        "kind": "file-unchanged",
+        "path": "src/users.js"
+      }
+    ]
+  }
+}

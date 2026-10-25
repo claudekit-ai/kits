@@ -1,0 +1,13 @@
+{
+  "name": "usage-meter",
+  "displayName": "Usage Meter",
+  "version": "0.1.1",
+  "description": "Status line with the model, context use and your 5-hour and weekly plan usage. Installs with /usage-meter:install.",
+  "author": {
+    "name": "Claudekit.ai",
+    "url": "https://claudekit.ai"
+  },
+  "homepage": "https://claudekit.ai/recipes/usage-meter/",
+  "license": "MIT",
+  "keywords": ["statusline", "usage-limits", "rate-limits", "context"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "release-notes",
+  "displayName": "Release Notes",
+  "version": "0.1.0",
+  "description": "Drafts release notes from git log between two refs, grouped by Conventional Commit type with breaking changes first. Writes RELEASE_NOTES.md; never tags or publishes.",
+  "author": {
+    "name": "Claudekit.ai",
+    "url": "https://claudekit.ai"
+  },
+  "homepage": "https://claudekit.ai/recipes/release-notes/",
+  "license": "MIT",
+  "keywords": ["changelog", "release-notes", "git", "conventional-commits"]
+}

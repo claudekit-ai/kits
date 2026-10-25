@@ -1,0 +1,20 @@
+{
+  "description": "Safe Mode: deny or ask before destructive Bash commands.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/guard-bash.sh"],
+            "timeout": 10,
+            "statusMessage": "safe-mode: checking command",
+            "onFailure": "block"
+          }
+        ]
+      }
+    ]
+  }
+}

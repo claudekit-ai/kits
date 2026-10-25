@@ -1,0 +1,45 @@
+{
+  "name": "claudekit-kits",
+  "description": "Free, tested Claude Code kits from Claudekit.ai, an independent community project (not affiliated with Anthropic). Each kit has a recipe page with its test level.",
+  "owner": {
+    "name": "Claudekit.ai",
+    "url": "https://claudekit.ai"
+  },
+  "plugins": [
+    {
+      "name": "usage-meter",
+      "source": "./usage-meter",
+      "description": "Status line with model, context use and your 5-hour and weekly plan usage (Pro and Max).",
+      "category": "monitoring",
+      "tags": ["statusline", "usage-limits", "context"]
+    },
+    {
+      "name": "safe-mode",
+      "source": "./safe-mode",
+      "description": "PreToolUse guard that denies or asks before destructive shell commands. Fails closed when jq is missing.",
+      "category": "security",
+      "tags": ["hooks", "guardrails", "bash"]
+    },
+    {
+      "name": "token-diet",
+      "source": "./token-diet",
+      "description": "Audits CLAUDE.md files, always-on rules, skills and MCP servers, then suggests documented ways to trim context.",
+      "category": "productivity",
+      "tags": ["context", "claude-md", "usage"]
+    },
+    {
+      "name": "pr-review",
+      "source": "./pr-review",
+      "description": "Reviews your branch diff against its base with a fixed checklist and writes REVIEW.md. Works offline.",
+      "category": "code-review",
+      "tags": ["review", "git", "checklist"]
+    },
+    {
+      "name": "release-notes",
+      "source": "./release-notes",
+      "description": "Drafts release notes from git log between two refs, grouped by Conventional Commit type.",
+      "category": "release",
+      "tags": ["changelog", "git", "conventional-commits"]
+    }
+  ]
+}

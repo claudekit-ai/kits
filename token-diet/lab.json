@@ -1,0 +1,37 @@
+{
+  "kit": "token-diet",
+  "static": {
+    "script": "lab/test.sh",
+    "covers": "always-loaded CLAUDE.md, imports, rules with and without paths, nested CLAUDE.md, skills, .mcp.json, 200-line flag, read-only"
+  },
+  "smoke": {
+    "fixture": "lab/fixture.sh",
+    "prompt": "/token-diet:audit",
+    "model": "sonnet",
+    "maxTurns": 4,
+    "allowedTools": [
+      "Bash(bash *)",
+      "Read",
+      "Glob",
+      "Grep"
+    ],
+    "expect": [
+      {
+        "kind": "file-unchanged",
+        "path": "CLAUDE.md"
+      },
+      {
+        "kind": "result-matches",
+        "pattern": "200"
+      },
+      {
+        "kind": "result-matches",
+        "pattern": "(?i)skill"
+      },
+      {
+        "kind": "result-matches",
+        "pattern": "/context"
+      }
+    ]
+  }
+}

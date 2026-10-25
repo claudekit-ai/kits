@@ -1,0 +1,13 @@
+{
+  "name": "safe-mode",
+  "displayName": "Safe Mode",
+  "version": "0.1.1",
+  "description": "PreToolUse guard that denies recursive deletes of broad paths, curl | sh and disk writes, and asks before force-pushes, hard resets, chmod -R 777 and DROP TABLE. Fails closed without jq.",
+  "author": {
+    "name": "Claudekit.ai",
+    "url": "https://claudekit.ai"
+  },
+  "homepage": "https://claudekit.ai/recipes/safe-mode/",
+  "license": "MIT",
+  "keywords": ["hooks", "guardrails", "security", "bash"]
+}

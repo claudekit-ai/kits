@@ -1,0 +1,13 @@
+{
+  "name": "pr-review",
+  "displayName": "PR Review",
+  "version": "0.1.0",
+  "description": "Reviews the current branch's diff against its base with a fixed checklist and writes REVIEW.md. Offline by default; gh is optional. Run /pr-review:review [base].",
+  "author": {
+    "name": "Claudekit.ai",
+    "url": "https://claudekit.ai"
+  },
+  "homepage": "https://claudekit.ai/recipes/pr-review/",
+  "license": "MIT",
+  "keywords": ["code-review", "git", "checklist", "pull-request"]
+}
