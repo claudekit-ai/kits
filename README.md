@@ -9,8 +9,8 @@ Claudekit.ai is an independent community project. Not affiliated with, endorsed 
 In Claude Code:
 
 ```text
-/plugin marketplace add tranquangdong/claudekit-kits
-/plugin install safe-mode@claudekit-kits
+/plugin marketplace add claudekit-ai/kits
+/plugin install safe-mode@claudekit
 ```
 
 | Kit | What it does | Recipe |

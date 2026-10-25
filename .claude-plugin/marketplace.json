@@ -1,5 +1,5 @@
 {
-  "name": "claudekit-kits",
+  "name": "claudekit",
   "description": "Free, tested Claude Code kits from Claudekit.ai, an independent community project (not affiliated with Anthropic). Each kit has a recipe page with its test level.",
   "owner": {
     "name": "Claudekit.ai",

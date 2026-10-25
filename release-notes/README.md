@@ -16,7 +16,7 @@ You need Claude Code. Pick one:
 
   `--plugin-dir` also accepts the unzipped `release-notes/` folder.
 - **Load it in every session.** Unzip it and move the `release-notes/` folder (the one that contains `.claude-plugin/plugin.json`) into `~/.claude/skills/`. Claude Code loads it at startup unless your administrator blocks skills-directory plugins.
-- **Install by name.** In Claude Code run `/plugin marketplace add tranquangdong/claudekit-kits`, then `/plugin install release-notes@claudekit-kits`.
+- **Install by name.** In Claude Code run `/plugin marketplace add claudekit-ai/kits`, then `/plugin install release-notes@claudekit`.
 
 ## Use
 
@@ -38,7 +38,7 @@ Claude can also start it on its own when you ask "what changed since v1.2?". Mer
 - Delete `RELEASE_NOTES.md` if you no longer need it.
 - Loaded with `--plugin-dir`: start Claude Code without the flag.
 - Copied into `~/.claude/skills/`: delete `~/.claude/skills/release-notes/`.
-- Installed from the marketplace: `claude plugin uninstall release-notes@claudekit-kits`.
+- Installed from the marketplace: `claude plugin uninstall release-notes@claudekit`.
 
 ## How it was tested
 

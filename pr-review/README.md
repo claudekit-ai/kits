@@ -16,7 +16,7 @@ You need Claude Code. Pick one:
 
   `--plugin-dir` also accepts the unzipped `pr-review/` folder.
 - **Load it in every session.** Unzip it and move the `pr-review/` folder (the one that contains `.claude-plugin/plugin.json`) into `~/.claude/skills/`. Claude Code loads it at startup unless your administrator blocks skills-directory plugins.
-- **Install by name.** In Claude Code run `/plugin marketplace add tranquangdong/claudekit-kits`, then `/plugin install pr-review@claudekit-kits`.
+- **Install by name.** In Claude Code run `/plugin marketplace add claudekit-ai/kits`, then `/plugin install pr-review@claudekit`.
 
 ## Use
 
@@ -38,7 +38,7 @@ Diffs over 3,000 lines switch to a file list, and Claude reviews the riskiest fi
 - Delete any `REVIEW.md` files you no longer need.
 - Loaded with `--plugin-dir`: start Claude Code without the flag.
 - Copied into `~/.claude/skills/`: delete `~/.claude/skills/pr-review/`.
-- Installed from the marketplace: `claude plugin uninstall pr-review@claudekit-kits`.
+- Installed from the marketplace: `claude plugin uninstall pr-review@claudekit`.
 
 ## How it was tested
 

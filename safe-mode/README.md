@@ -26,7 +26,7 @@ You need Claude Code. Pick one:
 
   `--plugin-dir` also accepts the unzipped `safe-mode/` folder.
 - **Load it in every session.** Unzip it and move the `safe-mode/` folder (the one that contains `.claude-plugin/plugin.json`) into `~/.claude/skills/`. Claude Code loads it at startup unless your administrator blocks skills-directory plugins.
-- **Install by name.** In Claude Code run `/plugin marketplace add tranquangdong/claudekit-kits`, then `/plugin install safe-mode@claudekit-kits`.
+- **Install by name.** In Claude Code run `/plugin marketplace add claudekit-ai/kits`, then `/plugin install safe-mode@claudekit`.
 
 ## Use
 
@@ -46,7 +46,7 @@ If you want a broader, maintained guard (secret and lockfile protection, a stop 
 
 - Loaded with `--plugin-dir`: start Claude Code without the flag.
 - Copied into `~/.claude/skills/`: delete `~/.claude/skills/safe-mode/`.
-- Installed from the marketplace: `claude plugin uninstall safe-mode@claudekit-kits`.
+- Installed from the marketplace: `claude plugin uninstall safe-mode@claudekit`.
 
 ## How it was tested
 

@@ -16,7 +16,7 @@ You need Claude Code. Pick one:
 
   `--plugin-dir` also accepts the unzipped `token-diet/` folder.
 - **Load it in every session.** Unzip it and move the `token-diet/` folder (the one that contains `.claude-plugin/plugin.json`) into `~/.claude/skills/`. Claude Code loads it at startup unless your administrator blocks skills-directory plugins.
-- **Install by name.** In Claude Code run `/plugin marketplace add tranquangdong/claudekit-kits`, then `/plugin install token-diet@claudekit-kits`.
+- **Install by name.** In Claude Code run `/plugin marketplace add claudekit-ai/kits`, then `/plugin install token-diet@claudekit`.
 
 ## Use
 
@@ -38,7 +38,7 @@ The report ends with an offer to draft one change. Nothing is edited until you a
 
 - Loaded with `--plugin-dir`: start Claude Code without the flag.
 - Copied into `~/.claude/skills/`: delete `~/.claude/skills/token-diet/`.
-- Installed from the marketplace: `claude plugin uninstall token-diet@claudekit-kits`.
+- Installed from the marketplace: `claude plugin uninstall token-diet@claudekit`.
 
 ## How it was tested
 

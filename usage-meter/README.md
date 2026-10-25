@@ -22,7 +22,7 @@ You need Claude Code. Pick one:
 
   `--plugin-dir` also accepts the unzipped `usage-meter/` folder.
 - **Load it in every session.** Unzip it and move the `usage-meter/` folder (the one that contains `.claude-plugin/plugin.json`) into `~/.claude/skills/`. Claude Code loads it at startup unless your administrator blocks skills-directory plugins.
-- **Install by name.** In Claude Code run `/plugin marketplace add tranquangdong/claudekit-kits`, then `/plugin install usage-meter@claudekit-kits`.
+- **Install by name.** In Claude Code run `/plugin marketplace add claudekit-ai/kits`, then `/plugin install usage-meter@claudekit`.
 
 ## Use
 
@@ -48,7 +48,7 @@ Prefer to do it by hand? Run `bash scripts/configure.sh install` from this folde
 - Run `/usage-meter:uninstall` first. It removes the `statusLine` entry only if it points at this kit's script, and deletes the script.
 - Loaded with `--plugin-dir`: start Claude Code without the flag.
 - Copied into `~/.claude/skills/`: delete `~/.claude/skills/usage-meter/`.
-- Installed from the marketplace: `claude plugin uninstall usage-meter@claudekit-kits`.
+- Installed from the marketplace: `claude plugin uninstall usage-meter@claudekit`.
 
 ## How it was tested
 
